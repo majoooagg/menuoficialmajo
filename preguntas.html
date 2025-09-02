@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reserva tu Cita Gastronómica</title>
+  <style>
+    body {
+      background-color: #fff8f0;
+      font-family: 'Georgia', serif;
+      color: #4b2e2e;
+      padding: 40px;
+    }
+
+    .formulario-carta {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff2e6;
+      border: 2px solid #d9a76c;
+      border-radius: 12px;
+      padding: 30px 40px;
+      box-shadow: 0 0 10px rgba(80, 40, 20, 0.1);
+    }
+
+    .formulario-carta h1 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 25px;
+      color: #a0522d;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 5px;
+      border: 1px solid #d9a76c;
+      border-radius: 6px;
+      background-color: #fffaf3;
+      font-family: 'Georgia', serif;
+      font-size: 14px;
+      color: #4b2e2e;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      background-color: #d2691e;
+      color: white;
+      border: none;
+      padding: 14px;
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #a0522d;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 20px;
+      color: #7b5e57;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="formulario-carta">
+    <h1>Formulario de Admisión Gastronómica</h1>
+    <form action="https://formspree.io/f/xjkoqkdv" method="POST">
+      
+      <label>
+        Tu correo electrónico:
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        ¿Cuál es tu nombre?
+        <input type="text" name="nombre" required>
+      </label>
+
+      <label>
+        ¿Qué edad tienes?
+        <input type="number" name="edad" min="0" required>
+      </label>
+
+      <label>
+        ¿Por qué decidiste estudiar gastronomía?
+        <textarea name="motivo" required></textarea>
+      </label>
+
+      <label>
+        ¿Qué tipo de comida prefieres?
+        <input type="text" name="tipo_comida" required>
+      </label>
+
+      <label>
+        ¿Cuándo deseas generar tu cita?
+        <input type="date" name="fecha_cita" required>
+      </label>
+
+      <button type="submit">Enviar Receta</button>
+    </form>
+    <p class="footer">Gracias por compartir tu sazón con nosotros 🍲</p>
+  </div>
+
+</body>
+</html>
